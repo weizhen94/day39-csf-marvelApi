@@ -1,0 +1,16 @@
+<div class="form-container">
+    <h2>Comment - {{ characterName }}</h2>
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput formControlName="text" rows="4"></textarea>
+      </mat-form-field>
+      <div class="button-row">
+        <button mat-raised-button color="primary" [disabled]="!commentForm.valid">Submit</button>
+        <button mat-raised-button color="warn" type="button" (click)="cancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  
+  
+  

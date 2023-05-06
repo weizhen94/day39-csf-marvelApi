@@ -1,0 +1,19 @@
+<div class="container">
+    <mat-toolbar color="primary">
+      <span>Marvel Characters</span>
+      <button mat-icon-button (click)="goHome()">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span class="spacer"></span>
+    </mat-toolbar>
+  
+    <div class="character-list">
+      <ul>
+        <li *ngFor="let character of characters">
+          <a [routerLink]="['/character', character.id]">{{ character.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  

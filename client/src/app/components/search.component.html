@@ -1,0 +1,8 @@
+<div class="search-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Search Characters</mat-label>
+      <input matInput [(ngModel)]="nameStartsWith" (keyup.enter)="search()" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="search()">Search</button>
+  </div>
+  
