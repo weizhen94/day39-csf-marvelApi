@@ -27,8 +27,8 @@ import com.example.server.repository.CommentRepository;
 public class MarvelApiService {
 
     private static final String BASE_URL = "https://gateway.marvel.com/v1/public/characters";
-    private static final String PUBLIC_KEY = "";
-    private static final String PRIVATE_KEY = "";
+    private static final String PUBLIC_KEY = "a6f3079176d1e0ddb0c27502ee475e6c";
+    private static final String PRIVATE_KEY = "763ccc0cf8ff5c1db6f2bef93ef2c9d1d5da4b79";
 
     @Autowired
     private RedisTemplate<String, MarvelCharacter> redisTemplate;
